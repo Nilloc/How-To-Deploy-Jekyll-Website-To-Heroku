@@ -14,8 +14,12 @@ cd my_jekyll_website
 
 ```
 Step 2 :
+
 ```bash
-Download and place all the above files except README.md as it is inside my_jekyll_website. These are the important files which tells Heroku to treat the app as Rack app and just sets it up on Heroku easily.
+Download and place all the above files except README.md as it is inside my_jekyll_website. 
+These are the important files which tells Heroku to treat the app as Rack app and just sets
+it up on Heroku easily.
+```
 
 Step 3 :
 
