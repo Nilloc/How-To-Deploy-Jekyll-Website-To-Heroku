@@ -8,7 +8,7 @@ A website/blog generated using [Jekyll](https://github.com/mojombo/jekyll).
 
 ## Instructions
 
-Step 1 : 
+Step 1 :
 ```bash
 cd my_jekyll_website
 
@@ -16,12 +16,20 @@ cd my_jekyll_website
 Step 2 :
 
 ```bash
-Download and place all the above files except README.md as it is inside my_jekyll_website. 
+Download and place all the above files except README.md as it is inside my_jekyll_website.
 These are the important files which tells Heroku to treat the app as Rack app and just sets
 it up on Heroku easily.
 ```
 
 Step 3 :
+
+Add this to you `_config.yaml` file
+
+    exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
+
+This prevents Jekyll's test posts from showing up on your blog.
+
+Step 4 :
 
 Run following commands :
 ```bash
@@ -30,7 +38,7 @@ heroku create
 git push heroku master
 ```
 
-Step 4 : 
+Step 5 :
 
 Visit your website :
 ```bash
